@@ -36,6 +36,7 @@ int main()
         {
             first = multbignum(first,i);
         }
+        printf("%d!\n",num);
              i=first.size-1;
             for(;i>=0;i--)
             {
