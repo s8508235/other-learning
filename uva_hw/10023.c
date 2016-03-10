@@ -8,6 +8,7 @@ int num[1001];
 int size;
 }bignum;
 void p_bignum(bignum a);
+bignum bignum_shift(bignum diver,int x);
 bignum rem;
 bignum multbignum(bignum a,int b)
 {
@@ -102,6 +103,7 @@ int searching(bignum x,bignum y)
             break;
         }
     }
+    if(i==0) rem = y;
     return i;
 }
 bignum bignum_shift(bignum diver,int x)
@@ -163,8 +165,8 @@ int main()
         {
             cal.num[length-j-1] = x[j]-'0';
         }
-        printf("create cal num\n");
-        p_bignum(cal);
+      //  printf("create cal num\n");
+       // p_bignum(cal);
         bignum ans;
         ans.size = (length%2)?((length+1)/2):(length/2);
         int ans_fat = ans.size-1;
@@ -190,7 +192,7 @@ int main()
         while(j>0)
         {
             bignum sub;
-            printf("copy rem\n");
+       //     printf("copy rem\n");
             sub.size = rem.size;
             int z;
             for(z= 0 ;z<rem.size;z++)
@@ -204,27 +206,27 @@ int main()
                 {
                     if(sub.num[z]==0)
                     {
-                        printf("down!\n");
+                    //    printf("down!\n");
                         sub.size--;
                     }
                     else break;
                 }
-                printf("create sub num\n");
+             //   printf("create sub num\n");
                 p_bignum(sub);
-                printf("start searching\n");
+              //  printf("start searching\n");
                 diver.num[0] = searching(diver,sub);
-                printf("current ans:%d\n",diver.num[0]);
+            //    printf("current ans:%d\n",diver.num[0]);
                 ans.num[ans_fat] =  diver.num[0];
                 ans_fat--;
                 j-=2;
             if( (rem.size> 1) && (rem.num[0]>0) || (j>0))
             {
-                printf("add itself\n");
+           //     printf("add itself\n");
                 diver = additself(diver);
-                p_bignum(diver);
-                printf("shift\n");
+          //      p_bignum(diver);
+         //       printf("shift\n");
                 diver = bignum_shift(diver,1);
-                p_bignum(diver);
+          //      p_bignum(diver);
             }
             else
             {
