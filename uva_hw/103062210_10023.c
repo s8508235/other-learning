@@ -26,8 +26,7 @@ bignum multbignum(bignum a,int b)
         ans.num[ans.size] %= 10;
     }
     if(ans.num[ans.size]) ans.size ++;
-
-    p_bignum(ans);
+ 
     return ans;
 }
 int cmp_bignum(bignum x,bignum y)
@@ -49,7 +48,6 @@ int cmp_bignum(bignum x,bignum y)
             {
                 if(i==0)
                 {
-                    printf("equal!\n");
                     return 1;
                 }
             }
@@ -81,10 +79,8 @@ bignum sub_bignum(bignum y,bignum x)
     }
     if(re.num[y.size-1]) re.size = y.size;
     else re.size = y.size -1 ;
-
+ 
     if(re.size==0) re.size = 1;
-    printf("sub the num!\n");
-    p_bignum(re);
     return re;
 }
 int searching(bignum x,bignum y)
@@ -93,13 +89,9 @@ int searching(bignum x,bignum y)
     for(i=9;i>0;i--)
     {
         x.num[0] = i;
-        printf("searching x:\n");
-        p_bignum(x);
         if(cmp_bignum(multbignum(x,i),y))
         {
             rem =sub_bignum(y,multbignum(x,i));
-            printf("find rem!\n");
-            p_bignum(rem);
             break;
         }
     }
@@ -116,14 +108,11 @@ bignum bignum_shift(bignum diver,int x)
     diver.size +=x;
     for(i=x-1;i>=0;i--)
         diver.num[i] = 0;
-    printf("end shift\n");
-    p_bignum(diver);
     return diver;
 }
 bignum additself(bignum a)
 {
     a.num[0] += a.num[0];
-    printf("dup:%d\n",a.num[0]);
     int i ;
     for(i=a.size-1;i>=0;i--)
     {
@@ -134,14 +123,12 @@ bignum additself(bignum a)
         }
     }
     if(a.num[a.size]) a.size++;
-
-    p_bignum(a);
+ 
     return a;
 }
 void p_bignum(bignum a)
 {
     int i;
-    printf("len of bignum:%d\n",a.size);
     for(i=a.size-1;i>=0;i--)
     {
         printf("%d",a.num[i]);
@@ -155,6 +142,7 @@ int main()
     int i;
     for(i=0;i<N;i++)
     {
+        if(i != 0) printf("\n");
         char x[1001];
         scanf("%s",x);
         int length = strlen(x);
@@ -165,12 +153,10 @@ int main()
         {
             cal.num[length-j-1] = x[j]-'0';
         }
-      //  printf("create cal num\n");
-       // p_bignum(cal);
         bignum ans;
         ans.size = (length%2)?((length+1)/2):(length/2);
         int ans_fat = ans.size-1;
-
+ 
         bignum diver;/*diver to store the number which is */
         diver.size = 1;
         rem.size = 0;
@@ -192,7 +178,6 @@ int main()
         while(j>0)
         {
             bignum sub;
-       //     printf("copy rem\n");
             sub.size = rem.size;
             int z;
             for(z= 0 ;z<rem.size;z++)
@@ -206,27 +191,18 @@ int main()
                 {
                     if(sub.num[z]==0)
                     {
-                    //    printf("down!\n");
                         sub.size--;
                     }
                     else break;
                 }
-             //   printf("create sub num\n");
-                p_bignum(sub);
-              //  printf("start searching\n");
                 diver.num[0] = searching(diver,sub);
-            //    printf("current ans:%d\n",diver.num[0]);
                 ans.num[ans_fat] =  diver.num[0];
                 ans_fat--;
                 j-=2;
             if( (rem.size> 1) && (rem.num[0]>0) || (j>0))
             {
-           //     printf("add itself\n");
                 diver = additself(diver);
-          //      p_bignum(diver);
-         //       printf("shift\n");
                 diver = bignum_shift(diver,1);
-          //      p_bignum(diver);
             }
             else
             {
