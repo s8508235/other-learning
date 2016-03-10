@@ -200,8 +200,15 @@ int main()
                 sub = bignum_shift(sub,2);
                 sub.num[1] = cal.num[j];
                 sub.num[0] = cal.num[j-1];
-                if(sub.num[1]==0 && sub.size==2)
-                    sub.size--;
+                for(z=sub.size-1;z>=0;z--)
+                {
+                    if(sub.num[z]==0)
+                    {
+                        printf("down!\n");
+                        sub.size--;
+                    }
+                    else break;
+                }
                 printf("create sub num\n");
                 p_bignum(sub);
                 printf("start searching\n");
@@ -210,7 +217,7 @@ int main()
                 ans.num[ans_fat] =  diver.num[0];
                 ans_fat--;
                 j-=2;
-            if( rem.size>1 ||j>0)
+            if( (rem.size> 1) && (rem.num[0]>0) || (j>0))
             {
                 printf("add itself\n");
                 diver = additself(diver);
