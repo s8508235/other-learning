@@ -4,17 +4,13 @@ import sys
 id = raw_input("Please enter your student id:")
 hidden_list=[]
 student_list=[]
-test_list=[]
 htpath = "/home/archi/s"+str(id) + "/Archi2016_Project1/" + str(id) +"_01/testing/hidden_testcase"
-stpath = "/home/archi/s"+str(id) + "/Archi2016_Project1/" + str(id) +"_01/testing/student_testcase"
-tpath  = "/home/archi/s"+str(id) + "/Archi2016_Project1/" + str(id) +"_01/testing/tests"
+stpath = "/home/archi/s"+str(id) + "/Archi2016_Project1/" + str(id) +"_01/testing/Student_valid_testcase"
 print htpath
 for dirP,dirN,FN in os.walk(htpath):
 	hidden_list.append(dirP)
 for dirP,dirN,FN in os.walk(stpath):
 	student_list.append(dirP)
-for dirP,dirN,FN in os.walk(tpath):
-	test_list.append(dirP)
 def file_test(file_list):
 	for filepath in file_list:
 		if(filepath != file_list[0]):
@@ -29,8 +25,8 @@ def file_test(file_list):
 			if(icp ==0 and  dcp ==0):
 				print ("copy correct")
 			ifilename = filepath.split('/',8)[8]
-			subprocess.call(['make','clean'],shell=False)
-			subprocess.call('make',shell=False)
+			subprocess.call(['make','clean'],shell=False,stdout = subprocess.PIPE)
+			subprocess.call('make',shell=False,stdout = subprocess.PIPE)
 			os.system('./single_cycle')
 			idiffcom = 'diff '+'snapshot.rpt '+filepath+'/'+'snapshot.rpt' 
 			idiff = os.system(idiffcom)
@@ -53,5 +49,3 @@ print "start:" +hidden_list[0]
 file_test(hidden_list)
 print "start:" +student_list[0]
 file_test(student_list)
-print "start:" +test_list[0]
-file_test(test_list)
