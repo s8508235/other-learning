@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1451537488 source:c:\users\bill\documents\codeblocks\hw6fordsk\main.cpp
+	<iostream>
+	"Implement.h"
+	"BasicTest.h"
+
+1451612545 c:\users\bill\documents\codeblocks\hw6fordsk\include\implement.h
+	"HashOperations.h"
+
+1451537454 c:\users\bill\documents\codeblocks\hw6fordsk\include\hashoperations.h
+	"Hashs.h"
+	<string>
+
+1451537475 c:\users\bill\documents\codeblocks\hw6fordsk\include\hashs.h
+	<iostream>
+	<string.h>
+
+1451537511 c:\users\bill\documents\codeblocks\hw6fordsk\include\basictest.h
+	"HashOperations.h"
+
+1452617362 source:c:\users\bill\documents\codeblocks\hw6fordsk\src\basictest.cpp
+	"BasicTest.h"
+	<iostream>
+	<string>
+	<cstring>
+	<sstream>
+	<fstream>
+
+1451537449 source:c:\users\bill\documents\codeblocks\hw6fordsk\src\hashoperations.cpp
+	"HashOperations.h"
+
+1451537470 source:c:\users\bill\documents\codeblocks\hw6fordsk\src\hashs.cpp
+	"Hashs.h"
+
+1452617338 source:c:\users\bill\documents\codeblocks\hw6fordsk\src\implement.cpp
+	"Implement.h"
+

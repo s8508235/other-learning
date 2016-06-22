@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1450705386 source:c:\users\bill\documents\codeblocks\hw5fordsk\main.cpp
+	<iostream>
+	"Implement.h"
+	"BasicTest.h"
+	"YourTest.h"
+
+1450713420 c:\users\bill\documents\codeblocks\hw5fordsk\include\implement.h
+	"TextAnalyzer.h"
+
+1450705426 c:\users\bill\documents\codeblocks\hw5fordsk\include\textanalyzer.h
+	"LetterStats.h"
+	<string>
+
+1450705574 c:\users\bill\documents\codeblocks\hw5fordsk\include\letterstats.h
+	<iostream>
+
+1450705496 c:\users\bill\documents\codeblocks\hw5fordsk\include\basictest.h
+	"TextAnalyzer.h"
+
+1450705505 c:\users\bill\documents\codeblocks\hw5fordsk\include\yourtest.h
+	"TextAnalyzer.h"
+
+1450705639 source:c:\users\bill\documents\codeblocks\hw5fordsk\src\basictest.cpp
+	"BasicTest.h"
+
+1450959468 source:c:\users\bill\documents\codeblocks\hw5fordsk\src\implement.cpp
+	"Implement.h"
+	<iostream>
+	<algorithm>
+
+1450705574 source:c:\users\bill\documents\codeblocks\hw5fordsk\src\letterstats.cpp
+	"LetterStats.h"
+
+1450705425 source:c:\users\bill\documents\codeblocks\hw5fordsk\src\textanalyzer.cpp
+	"TextAnalyzer.h"
+
+1450959457 source:c:\users\bill\documents\codeblocks\hw5fordsk\src\yourtest.cpp
+	"YourTest.h"
+

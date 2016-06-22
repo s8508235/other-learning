@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1459407216 source:c:\users\bill\documents\codeblocks\archipro1\main.c
+	"stdio.h"
+	"stdlib.h"
+	"instruction.h"
+
+1459406640 source:c:\users\bill\documents\codeblocks\archipro1\instruction.c
+	"stdio.h"
+	"instruction.h"
+
+1458224091 c:\users\bill\documents\codeblocks\archipro1\instruction.c
+
+1459166978 c:\users\bill\documents\codeblocks\archipro1\instruction.h
+

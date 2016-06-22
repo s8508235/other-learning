@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="UBIKE" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/UBIKE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/UBIKE" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/ConstParams.h" />
+		<Unit filename="include/PriceTableADT.h" />
+		<Unit filename="include/PriceTableIMP.h" />
+		<Unit filename="include/UBike.h" />
+		<Unit filename="include/UBikeHashTableADT.h" />
+		<Unit filename="include/UBikeHashTableIMP.h" />
+		<Unit filename="include/UBikeHeapADT.h" />
+		<Unit filename="include/UBikeHeapIMP.h" />
+		<Unit filename="include/UBikeSystemADT.h" />
+		<Unit filename="include/UBikeSystemIMP.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/PriceTableADT.cpp" />
+		<Unit filename="src/PriceTableIMP.cpp" />
+		<Unit filename="src/UBike.cpp" />
+		<Unit filename="src/UBikeHashTableADT.cpp" />
+		<Unit filename="src/UBikeHashTableIMP.cpp" />
+		<Unit filename="src/UBikeHeapADT.cpp" />
+		<Unit filename="src/UBikeHeapIMP.cpp" />
+		<Unit filename="src/UBikeSystemADT.cpp" />
+		<Unit filename="src/UBikeSystemIMP.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

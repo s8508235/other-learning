@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1448369194 source:c:\users\bill\documents\codeblocks\tcp\main.cpp
+	<iostream>
+	<windows.h>
+	<winsock.h>
+

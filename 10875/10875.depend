@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1450872696 source:c:\users\bill\documents\codeblocks\10875\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	"function.h"
+
+1450872696 c:\users\bill\documents\codeblocks\10875\include\function.h
+
+1450874198 source:c:\users\bill\documents\codeblocks\10875\src\function.cpp
+	"function.h"
+	"stdio.h"
+

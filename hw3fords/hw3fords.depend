@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1447930316 source:c:\users\bill\documents\codeblocks\hw3fords\main.cpp
+	<iostream>
+	"Implement.h"
+	"BasicTest.h"
+	"YourTest.h"
+
+1448291945 c:\users\bill\documents\codeblocks\hw3fords\include\implement.h
+	"BinearyTreeOperations.h"
+
+1447930272 c:\users\bill\documents\codeblocks\hw3fords\include\binearytreeoperations.h
+	<string>
+	<iostream>
+
+1447930272 c:\users\bill\documents\codeblocks\hw3fords\include\basictest.h
+	"BinearyTreeOperations.h"
+
+1447930390 c:\users\bill\documents\codeblocks\hw3fords\include\yourtest.h
+	"BinearyTreeOperations.h"
+
+1448292577 source:c:\users\bill\documents\codeblocks\hw3fords\src\basictest.cpp
+	"BasicTest.h"
+
+1447930272 source:c:\users\bill\documents\codeblocks\hw3fords\src\binearytreeoperations.cpp
+	"BinearyTreeOperations.h"
+
+1449556423 source:c:\users\bill\documents\codeblocks\hw3fords\src\yourtest.cpp
+	"YourTest.h"
+
+1449078555 source:c:\users\bill\documents\codeblocks\hw3fords\src\implement.cpp
+	"Implement.h"
+

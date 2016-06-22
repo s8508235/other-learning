@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1446833898 source:c:\users\bill\documents\codeblocks\hw2fords\main.cpp
+	<iostream>
+	"Implement.h"
+	"BasicTest.h"
+
+1446834038 c:\users\bill\documents\codeblocks\hw2fords\include\implement.h
+	"LinkedlistOperations.h"
+
+1446833320 c:\users\bill\documents\codeblocks\hw2fords\include\linkedlistoperations.h
+	"Node.h"
+	<string>
+
+1446833386 c:\users\bill\documents\codeblocks\hw2fords\include\node.h
+	<string>
+
+1446833280 c:\users\bill\documents\codeblocks\hw2fords\include\basictest.h
+	"LinkedlistOperations.h"
+
+1449046027 source:c:\users\bill\documents\codeblocks\hw2fords\src\implement.cpp
+	"Implement.h"
+	<iostream>
+
+1446833306 source:c:\users\bill\documents\codeblocks\hw2fords\src\linkedlistoperations.cpp
+	"LinkedlistOperations.h"
+
+1449046141 source:c:\users\bill\documents\codeblocks\hw2fords\src\basictest.cpp
+	"BasicTest.h"
+	<iostream>
+	<stdlib.h>
+

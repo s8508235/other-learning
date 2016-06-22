@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1449554322 source:c:\users\bill\documents\codeblocks\hw4fords\main.cpp
+	<iostream>
+	"Implement.h"
+	"BasicTest.h"
+	"YourTest.h"
+
+1449469228 c:\users\bill\documents\codeblocks\hw4fords\include\implement.h
+	"GraphOperations.h"
+
+1449554277 c:\users\bill\documents\codeblocks\hw4fords\include\graphoperations.h
+	<string>
+	<iostream>
+
+1449554212 c:\users\bill\documents\codeblocks\hw4fords\include\basictest.h
+	"GraphOperations.h"
+
+1449554529 c:\users\bill\documents\codeblocks\hw4fords\include\yourtest.h
+	"GraphOperations.h"
+
+1449554200 source:c:\users\bill\documents\codeblocks\hw4fords\src\basictest.cpp
+	"BasicTest.h"
+
+1449554252 source:c:\users\bill\documents\codeblocks\hw4fords\src\graphoperations.cpp
+	"GraphOperations.h"
+
+1449915829 source:c:\users\bill\documents\codeblocks\hw4fords\src\yourtest.cpp
+	"YourTest.h"
+
+1449554959 source:c:\users\bill\documents\codeblocks\hw4fords\src\implement.cpp
+	"Implement.h"
+

@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1452777738 source:c:\users\bill\documents\codeblocks\ubike\main.cpp
+	<string>
+	<fstream>
+	<sstream>
+	<iostream>
+	"UBikeSystemIMP.h"
+
+1451908089 c:\users\bill\documents\codeblocks\ubike\include\ubikesystemimp.h
+	"UBikeSystemADT.h"
+
+1451907497 c:\users\bill\documents\codeblocks\ubike\include\ubikesystemadt.h
+	<fstream>
+	<sstream>
+	<iostream>
+	<iomanip>
+	"PriceTableIMP.h"
+	"UBikeHashTableIMP.h"
+	"UBikeHeapIMP.h"
+
+1452529987 c:\users\bill\documents\codeblocks\ubike\include\pricetableimp.h
+	"PriceTableADT.h"
+
+1451907374 c:\users\bill\documents\codeblocks\ubike\include\pricetableadt.h
+	<map>
+	<iostream>
+	"ConstParams.h"
+	<sstream>
+
+1451907347 c:\users\bill\documents\codeblocks\ubike\include\constparams.h
+	<string>
+	<map>
+
+1452530522 c:\users\bill\documents\codeblocks\ubike\include\ubikehashtableimp.h
+	"UBikeHashTableADT.h"
+
+1451907430 c:\users\bill\documents\codeblocks\ubike\include\ubikehashtableadt.h
+	"UBike.h"
+	<list>
+	<array>
+
+1451907403 c:\users\bill\documents\codeblocks\ubike\include\ubike.h
+	<string>
+	<iomanip>
+	<sstream>
+
+1452605452 c:\users\bill\documents\codeblocks\ubike\include\ubikeheapimp.h
+	"UBikeHeapADT.h"
+
+1451907456 c:\users\bill\documents\codeblocks\ubike\include\ubikeheapadt.h
+	<array>
+	"UBike.h"
+	"ConstParams.h"
+
+1452020037 source:c:\users\bill\documents\codeblocks\ubike\src\pricetableadt.cpp
+	"PriceTableADT.h"
+
+1452783793 source:c:\users\bill\documents\codeblocks\ubike\src\pricetableimp.cpp
+	"PriceTableIMP.h"
+	<fstream>
+
+1451907402 source:c:\users\bill\documents\codeblocks\ubike\src\ubike.cpp
+	"UBike.h"
+
+1451907431 source:c:\users\bill\documents\codeblocks\ubike\src\ubikehashtableadt.cpp
+	"UBikeHashTableADT.h"
+
+1452609992 source:c:\users\bill\documents\codeblocks\ubike\src\ubikehashtableimp.cpp
+	"UBikeHashTableIMP.h"
+	<string>
+	<bitset>
+
+1452605431 source:c:\users\bill\documents\codeblocks\ubike\src\ubikeheapadt.cpp
+	"UBikeHeapADT.h"
+	"stdio.h"
+
+1452613189 source:c:\users\bill\documents\codeblocks\ubike\src\ubikeheapimp.cpp
+	"UBikeHeapIMP.h"
+	<iostream>
+
+1451907475 source:c:\users\bill\documents\codeblocks\ubike\src\ubikesystemadt.cpp
+	"UBikeSystemADT.h"
+
+1452793955 source:c:\users\bill\documents\codeblocks\ubike\src\ubikesystemimp.cpp
+	"UBikeSystemIMP.h"
+

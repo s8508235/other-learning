@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1465032440 source:c:\users\bill\documents\codeblocks\archipro3\main.c
+	"stdio.h"
+	"stdlib.h"
+	"instruction.h"
+	"define.h"
+
+1465028043 source:c:\users\bill\documents\codeblocks\archipro3\define.c
+	"define.h"
+
+1465027532 c:\users\bill\documents\codeblocks\archipro3\define.h
+	"stdlib.h"
+	"stdio.h"
+
+1464749253 c:\users\bill\documents\codeblocks\archipro3\instruction.h
+
+1465031737 source:c:\users\bill\documents\codeblocks\archipro3\instruction.c
+	"stdio.h"
+	"instruction.h"
+	"define.h"
+
