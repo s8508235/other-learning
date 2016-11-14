@@ -1,4 +1,5 @@
 import itertools
+from builtins import input
 global_set_fk = set((itertools.permutations('1234567890', 4)))
 def check(Ans,G):
 	A=0
@@ -31,18 +32,18 @@ def my_del(A,B,my_guess_num):
 def guess(Round):
 	make_num = "".join(global_set_fk.pop()) 
 	guess_num_list = list(guess_num)
-	print len(global_set_fk)
+	#print len(global_set_fk)
 	A,B =check(make_num,guess_num_list)
-	print "Round-"+str(Round)+" " + "".join(make_num)+" "+ str(A) +"A" + str(B) + "B"
+	print ("Round-"+str(Round)+" " + "".join(make_num)+" "+ str(A) +"A" + str(B) + "B")
 	if(A == 4):
-		print "Correct!\n"
+		print ("Correct!\n")
 	else:
 		my_set = my_del(A,B,make_num)
 		guess(Round+1)
 
 def enter_num():
 	global guess_num
-	guess_num = raw_input("Please enter a non-repeat 4-digit number:")
+	guess_num = input("Please enter a non-repeat 4-digit number:")	
 	if(len(str(guess_num)) is not 4 or len(set(list(guess_num))) is not 4):
 		print ("Wrong input!\nEnter again.")
 		return 0
